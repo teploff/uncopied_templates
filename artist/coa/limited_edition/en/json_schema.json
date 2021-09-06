@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoA limited edition json schema fields description",
+  "description": "CoA limited edition json schema fields",
+  "type": "object",
+  "properties": {
+    "height": {
+      "description": "Some description about height field",
+      "type": "string"
+    },
+    "width": {
+      "description": "Some description about with field",
+      "type": "string"
+    },
+    "art_medium": {
+      "description": "Some description about art_medium field",
+      "type": "string"
+    },
+    "artwork_surface": {
+      "description": "Some description about artwork_surface field",
+      "type": "string"
+    },
+    "date_created": {
+      "type": "string",
+      "format": "date"
+    },
+    "digital_assets": {
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [ "primary_image"]
+    }
+  },
+  "required": [ "height", "width", "date_created" ]
+}
