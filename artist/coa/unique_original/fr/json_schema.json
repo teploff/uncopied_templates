@@ -32,8 +32,15 @@
           "format": "uuid"
         }
       },
-      "required": [ "primary_image"]
+      "required": [
+        "primary_image"
+      ]
     }
   },
-  "required": [ "height", "width", "date_created" ]
+  "required": [
+    "height",
+    "width",
+    "date_created",
+    "digital_assets"
+  ]
 }

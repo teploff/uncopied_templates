@@ -50,6 +50,7 @@
   "required": [
     "height",
     "width",
-    "date_created"
+    "date_created",
+    "digital_assets"
   ]
 }
